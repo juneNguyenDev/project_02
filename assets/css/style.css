@@ -189,15 +189,20 @@ a {
   padding: 64px 0 0 130px;
 }
 
-.hero .heading {
+.heading {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 5.8rem;
-  line-height: 1.17;
   letter-spacing: -0.02em;
   color: #171100;
 }
-
+.heading.lv1 {
+  font-size: 5.8rem;
+  line-height: 1.17;
+}
+.heading.lv2 {
+  font-size: 3.8rem;
+  line-height: 4.8rem;
+}
 .hero .desc {
   margin-top: 22px;
   font-size: 1.8rem;
@@ -255,4 +260,41 @@ a {
   font-size: 4.4rem;
   line-height: 1.23;
   color: #171100;
+}
+/* popular */
+.popular {
+  padding: 65px 0;
+  margin-top: 135px;
+}
+.popular-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular-top .desc {
+  margin-top: 16px;
+  width: 468px;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #5f5b53;
+}
+.popular-top .control {
+  display: flex;
+  gap: 18px;
+}
+.popular-top .control-btn {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.popular-top .control-btn:hover {
+  background-color: var(--primary-color);
+  color: #fffcf4;
 }
