@@ -17,9 +17,23 @@ body {
 }
 
 /* Common */
+.world-break-all {
+  word-break: break-all ;
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.line-clamp.line2 {
+  --line-clamp: 2;
+}
 a {
   text-decoration: none;
-  color: currentColor ;
+  color: currentColor;
 }
 
 .btn {
@@ -343,6 +357,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 3rem; /* 166.667% */
+  padding-right: 10px;
 }
 .popular .rating .value {
   margin-left: 6px;
